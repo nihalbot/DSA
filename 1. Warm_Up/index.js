@@ -566,26 +566,26 @@
 //   console.log("")
 // }
 
-var reverse = function (x) {
-  let orginalNumber = x;
-  let reverseNumber = 0;
-  x = Math.abs(x);
+// var reverse = function (x) {
+//   let orginalNumber = x;
+//   let reverseNumber = 0;
+//   x = Math.abs(x);
 
-  for (let i = 0; x > 0; i++) {
-    let reminder = 0;
-    reminder = x % 10;
-    x = Math.floor(x / 10);
-    reverseNumber = (10 * reverseNumber) + reminder;
-  }
+//   for (let i = 0; x > 0; i++) {
+//     let reminder = 0;
+//     reminder = x % 10;
+//     x = Math.floor(x / 10);
+//     reverseNumber = (10 * reverseNumber) + reminder;
+//   }
 
-  if (reverseNumber > Math.pow(2, 31) || reverseNumber < Math.pow(-2, 31)) {
-    return 0;
-  } 
+//   if (reverseNumber > Math.pow(2, 31) || reverseNumber < Math.pow(-2, 31)) {
+//     return 0;
+//   } 
 
-  return (orginalNumber < 0) ? -reverseNumber: reverseNumber;
-};
+//   return (orginalNumber < 0) ? -reverseNumber: reverseNumber;
+// };
 
-let number = 123;
+// let number = 123;
 
-let result = reverse(number);
-console.log(result);
+// let result = reverse(number);
+// console.log(result);
